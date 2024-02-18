@@ -1,0 +1,83 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 72px;
+  align-items: center;
+  
+}
+
+* {
+  margin: 0;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+
+}
+
+button {
+  all: unset;
+  background-color: red;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  height: 32px;
+  padding: 6px 16px;
+  color: white;
+  font-weight: 500px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 72px);
+
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.hero h1 {
+  font-weight: 800;
+  font-size: 108px;
+  line-height: 102px;
+}
+
+.hero p {
+  font-weight: 600;
+  color: black;
+  max-width: 600px;
+}
+
+.hero-button {
+  display: flex;
+  gap: 40px;
+
+}
+
+.btn {
+  background-color: transparent;
+  border: 1px black solid;
+  color: black;
+}
+
+.shopping {
+  font-size: 14px;
+  margin-bottom: 8px;
+
+}
+
+
+.brand-icon {
+  display: flex;
+  gap: 16px;
+
+}
