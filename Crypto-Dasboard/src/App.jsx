@@ -1,11 +1,28 @@
 import Dashboard from "./Pages/Dashboard/Dashboard"
-// import './App.css'
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Support from "./Pages/Support/Support"
+import TransactionPage from "./Pages/Transaction/Transaction"
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Dashboard />,
+  },
+  {
+    path: "/transactions",
+    element: <TransactionPage />,
+  },
+  {
+    path: "/Support",
+    element: <Support />,
+  },
+]);
 
 function App() {
 
   return (
     <>
-      <Dashboard></Dashboard>
+        <RouterProvider router={router} />
     </>
   )
 }
